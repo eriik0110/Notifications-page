@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(210, 60%, 98%);
+  font-size: 16px;
+  color: hsl(219, 12%, 42%);
+}
+
+.container {
+  max-width: 800px;
+  margin: 80px auto;
+  border-radius: 20px;
+  /* background-color: red; */
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: 40px 30px 0;
+  margin: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+  /* box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 26px -13px; */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* gap: 10px; */
+}
+
+p.title-text {
+  color: hsl(224, 21%, 14%);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+p.num {
+  background-color: hsl(219, 85%, 26%);
+  color: #fff;
+  font-weight: 800;
+  padding: 3px 12px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.read {
+  text-decoration: none;
+  color: hsl(219, 14%, 63%);
+}
+
+.time {
+  color: hsl(219, 14%, 63%);
+}
+
+.single-box {
+  /* background-color: red; */
+  padding: 15px; /* IMPORTANT */
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  word-spacing: 1px; /* IMPORTANT */
+}
+
+.single-box.unseen {
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 10px;
+}
+
+.avatar img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.name {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+}
+
+a.post {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+}
+
+a.group {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+}
+
+span.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+a.name:hover,
+a.read:hover,
+a.group:hover,
+a.post:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.message {
+  /* width: 550px; */
+  border: 2px solid hsl(205, 33%, 90%);
+  padding: 12px;
+  margin-top: 12px;
+
+  border-radius: 5px;
+}
+
+.message:hover {
+  background-color: hsl(205, 33%, 90%);
+}
+
+.with-mssg {
+  align-items: flex-start;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.single-box.comment {
+  justify-content: space-between;
+}
+
+.img-box img {
+  width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .container {
+    margin: 20px auto;
+  }
+
+  .wrapper {
+    margin: 10px;
+    padding: 25px 15px 0;
+  }
+
+  p.title-text {
+    font-size: 20px;
+  }
+  p.num {
+    padding: 2px 10px;
+  }
+
+  .message p {
+    font-size: 14px;
+    padding: 3px;
+  }
+}

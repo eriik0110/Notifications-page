@@ -1,7 +1,3 @@
-# Notifications-page
-Notifications page using JS, HTML and CSS
-
-
 ## The challenge
 
 The challenge is to build out this notifications page and get it looking as close to the design as possible.
